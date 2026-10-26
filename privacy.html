@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Millennium Command Center.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Millennium Command Center · Last updated October 26, 2026</p>
+
+  <h2>Who uses this app</h2>
+  <p>Millennium Command Center is a personal dashboard used only by its developer on their own computer. It is not offered to the public.</p>
+
+  <h2>What Google data it accesses</h2>
+  <p>With your permission, the app uses the Google Calendar API with the read-only scope <code>https://www.googleapis.com/auth/calendar.readonly</code>. It reads the list of your calendars and the upcoming events on the calendars you choose to show. It cannot create, edit, or delete events.</p>
+
+  <h2>What it keeps</h2>
+  <ul>
+    <li><strong>Sign-in token.</strong> The Google OAuth token is saved in a file on the local computer so the dashboard can refresh events.</li>
+    <li><strong>Event cache.</strong> A small local cache holds only what the dashboard displays: event title, start and end time, location, a link, and which calendar it came from. Raw responses from Google are never written to disk.</li>
+  </ul>
+  <p>Both stay on the local computer. Nothing is uploaded to any server.</p>
+
+  <h2>Sharing</h2>
+  <p>Google user data is not sold, shared with, or transferred to anyone. It is not used for advertising or to train AI or machine-learning models. Its use follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Removing access</h2>
+  <p>You can revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Running <code>millennium-calendar disconnect</code> deletes the local token and event cache.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: open an issue at <a href="https://github.com/BlushRins/millennium-command-center-site/issues">github.com/BlushRins/millennium-command-center-site</a>.</p>
+
+  <footer><a href="index.html">Home</a></footer>
+</main>
+</body>
+</html>
